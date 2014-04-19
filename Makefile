@@ -1,7 +1,7 @@
 .PHONY: deploy clean
-deploy: clean
+deploy: deploy-clean
 	scp src/* mkehrt_roseandsigil@ssh.phx.nearlyfreespeech.net:/home/public/
 
-clean:
+deploy-clean:
 	- find . -name "*~" | xargs rm -f
 
