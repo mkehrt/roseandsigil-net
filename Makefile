@@ -4,5 +4,5 @@ deploy: deploy-clean
 	scp src/* mkehrt_roseandsigil@ssh.phx.nearlyfreespeech.net:/home/public/
 
 deploy-clean:
-	- find . -name "*~" | xargs rm -f
+	- find src -name "*~" | xargs rm -f
 
